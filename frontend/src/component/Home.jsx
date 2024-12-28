@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import '../style/Home.css'
-import marketingplan from '../images/marketingplan.jpeg'
 import ClientFeedback from './ClientFeedback'
 import digitalmarketing from '../images/digitalmarketing.png';
 import webdevelopment from '../images/webdevelopment.jpg';
