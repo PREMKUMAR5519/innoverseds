@@ -11,8 +11,11 @@ function Contact() {
      setIsScrolled(true)
      setSelected("contact")
     }, [])
+
+
     
-  return (
+    
+  return ( 
     <div>
         <Navbar/>
         <section className='c_section1'>

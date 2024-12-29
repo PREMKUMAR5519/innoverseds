@@ -4,7 +4,8 @@
     align-items: start;
     background-color: #3c60db;
     color: #ffffff;
-    padding: 40px 80px;
+    padding: 40px 40px;
+  
     justify-content: space-between;
   }
   
@@ -71,7 +72,7 @@
     margin-top: 30px;
     font-size: 0.9rem;
     color: #ffffff;
-    text-align: center;
+    text-align: left;
   }
   
   .footer_head{

@@ -8,7 +8,7 @@ import Footer from './Footer';
 import Navbar from './Navbar';
 import { useMyContext } from '../context/MyContext'
 
-function Home() {
+function Home() { 
 
    const { setIsScrolled, setSelected } = useMyContext()
     useEffect(() => {
@@ -51,11 +51,13 @@ function Home() {
         <section className='top_section'>
             <div className='hts_1'>
                 <h1>Innovating Your Future, One Step at a Time</h1>
-                <p>Discover how Innoverse Digital Services can elevate your business with cutting-edge web development, powerful digital marketing strategies, and actionable data insights.</p>
-                <button>Get Started</button>
+                <p>Discover how Innoverse Digital Services can elevate your business with cutting-edge web development, <br/> powerful digital marketing strategies, and actionable data insights.</p>
+               <div className='hts_11'>
+               <h2>From dreams to delivery, we’re your trusted partner in success. <br/> Let’s Build Something Extraordinary Together</h2>
+               <button>Get Started</button>
+               </div>
 
             </div>
-            <h2>rom dreams to delivery, we’re your trusted partner in success. Let’s Build Something Extraordinary Together</h2>
 
             <div className='hts_3'>
 
@@ -105,7 +107,7 @@ function Home() {
     </div> */}
     <div className='service_section'>
         <h2 className='home_heading'>our services</h2>
-        <p className='home_subheading'>Discover a wide range of digital solutions crafted to empower your business in Tamil Nadu, India. From innovative web development to result-driven digital marketing strategies, we provide tailored services designed to meet your unique needs and help you thrive in the digital era.</p>
+        <p className='home_subheading'>Discover a wide range of digital solutions crafted to empower your business in Tamil Nadu, India. From innovative <br/> web development to result-driven digital marketing strategies, we provide tailored services designed <br/> to meet your unique needs and   help you thrive in the digital era.</p>
         <div className="services-section">
       <div className="service-card">
         <div className="service-text">
@@ -131,8 +133,9 @@ function Home() {
       </div>
     </div>
     </div>
-    <ClientFeedback/>
+    
     <ContactSection/>
+    <ClientFeedback/>
     <Footer/>
     </div>
   )

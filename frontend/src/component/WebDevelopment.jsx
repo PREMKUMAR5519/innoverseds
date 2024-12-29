@@ -7,7 +7,7 @@ import Navbar from './Navbar'
 import { useMyContext } from '../context/MyContext'
 function WebDevelopment() {
    const { setIsScrolled } = useMyContext()
-    useEffect(() => {
+    useEffect(() => { 
         const handleScroll = () => {
           // Check if the page is scrolled more than 100px
           if (window.scrollY > 100) {
@@ -100,9 +100,10 @@ function WebDevelopment() {
         </section>
         <section className='wd_section2'>
             <h1>Web Development: Building Your Online Presence</h1>
+            <p>Your website is more than just a digital brochure – it’s your business’s online identity. At Innoverse Digital Solutions, we specialize in creating custom, responsive websites designed to attract visitors and drive conversions. From e-commerce platforms to portfolios, we ensure your website is fast, user-friendly, and SEO-optimized for maximum impact.</p>
+
             <div className='wd_section2_1'>
                 <div className='wd_section2_11'>
-                    <p>Your website is more than just a digital brochure – it’s your business’s online identity. At Innoverse Digital Solutions, we specialize in creating custom, responsive websites designed to attract visitors and drive conversions. From e-commerce platforms to portfolios, we ensure your website is fast, user-friendly, and SEO-optimized for maximum impact.</p>
                     <h5>Why Your Business Needs a Website in Today’s Digital World</h5>
                     <p>In today’s fast-paced digital landscape, a website is not just a tool; it’s the foundation of your online presence and a vital part of your business strategy. A well-designed, responsive website helps you build credibility, connect with customers, and stand out in an increasingly competitive market. Whether you’re a startup or an established brand, having a website is crucial for digital marketing success.</p>
                     <p>Your website serves as the digital storefront for your business, providing potential customers with easy access to your services, products, and contact information 24/7. It’s also a powerful marketing tool, allowing you to track visitor behavior, improve customer engagement, and convert leads into loyal clients. With a strong web presence, you can amplify your SEO efforts, enhance brand visibility, and ensure you’re always just a click away from new opportunities.</p>
@@ -117,7 +118,7 @@ function WebDevelopment() {
         <section className='wb_services'>
             <div className='wb_services1'>
                 <h1 className='home_heading'>Web Development Services</h1>
-                <p className='home_subheading'>At Innoverse Digital Solutions, we design stunning, responsive websites tailored to your business goals. Whether it’s enhancing online presence, driving user engagement, or building a strong brand identity, our web solutions deliver results that matter.</p>
+                <p className='home_subheading' style={{fontWeight:"400"}}>At Innoverse Digital Solutions, we design stunning, responsive websites tailored to your business goals. Whether it’s enhancing online presence, driving user engagement, or building a strong brand identity, our web solutions deliver results that matter.</p>
             </div>
             <div className='wb_services2'>
                 {services.map((e,i)=>(

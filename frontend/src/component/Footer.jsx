@@ -9,7 +9,7 @@ const Footer = () => {
         <p>
           Empowering businesses with tailored digital solutions to meet their
           unique needs and achieve online success.
-        </p>
+        </p> 
         <div className="social-icons">
           <i className="fab fa-facebook"></i>
           <i className="fab fa-instagram"></i>

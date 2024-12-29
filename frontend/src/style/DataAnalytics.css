@@ -1,6 +1,8 @@
 .wd_top_section>span{
     font-size: 1.1rem;
     letter-spacing: 0.8px;
+    position: absolute;
+    bottom: 20vh;
 }
 .da_section1{
     display: flex;
@@ -35,7 +37,7 @@
 }
 
 .da-content {
-    max-width: 50%;
+    max-width: 70%;
 
 }
 
