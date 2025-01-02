@@ -12,8 +12,12 @@ import basic1 from '../images/basic1.png'
 import Footer from './Footer'
 import Navbar from './Navbar'
 import { useMyContext } from '../context/MyContext'
+import { useNavigate } from 'react-router-dom'
+
 function WebDevelopment() {
    const { setIsScrolled } = useMyContext()
+   const navigate = useNavigate()
+
     useEffect(() => { 
         const handleScroll = () => {
           // Check if the page is scrolled more than 100px
@@ -103,7 +107,7 @@ function WebDevelopment() {
         <section className='wd_top_section' style={{backgroundImage:`url("${webhome}")`}}>
             <h1>Elegant Web Solutions for Your Business</h1>
             <p>Transform your digital presence with expertly crafted websites, including custom designs, e-commerce platforms, and portfolio showcases. Tailored to your needs, our web solutions help your brand stand out and thrive online.</p>
-            <button>contact us</button>
+            <button onClick={()=>{navigate("/contact")}}>contact us</button>
         </section>
         <section className='wd_section2'>
             <h1>Web Development: Building Your Online Presence</h1>
@@ -160,7 +164,7 @@ function WebDevelopment() {
         </section>
         <div className='wd_end'>
             <p>Let us help you transform your online presence and achieve real, measurable results with solutions that are as unique as your business. </p>
-             <button>contact us</button>
+             <button onClick={()=>{navigate("/contact")}}>contact us</button>
         </div>
         <Footer/>
     </div>

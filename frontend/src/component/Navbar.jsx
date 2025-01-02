@@ -29,7 +29,7 @@ function Navbar() {
 
   return (
     <div className={`nav_main ${isScrolled}`}>
-      <>
+      
       {isBelow480px?(
         <div className='mobile_nav_main'>
         {/* Logo and Menu Button */}
@@ -95,7 +95,7 @@ function Navbar() {
         </div>
           </div>
       )}
-      </>
+      
     </div>
   )
 }

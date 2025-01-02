@@ -7,10 +7,11 @@ import data21 from '../images/data21.png'
 import Footer from './Footer'
 import Navbar from './Navbar'
 import { useMyContext } from '../context/MyContext'
+import { useNavigate } from 'react-router-dom'
 
 function DataAnalytics() {
     
-
+   const navigate = useNavigate()
    const { setIsScrolled,setSelected } = useMyContext()
    useEffect(() => {
     setSelected('data')
@@ -38,7 +39,7 @@ function DataAnalytics() {
             <h1>Unlock the Power of Data Analytics for Your Business</h1>
             <p>Leverage advanced data analytics solutions to transform your business insights into actionable strategies. At Innoverse Digital Solutions, we empower you with customized analytics tools to make smarter decisions, drive growth, and achieve lasting success. Turn data into your competitive advantage today.</p>
             <span>Get Started with Data-Driven Success</span>
-            <button>contact us</button>
+            <button onClick={()=>{navigate("/contact")}} >contact us</button>
         </section>
         <section className='da_section1'>
             <h2 className='home_heading'>Our Data Analytics Services</h2>
@@ -156,7 +157,7 @@ function DataAnalytics() {
             <p className="das-highlight">
                 <strong>Get in touch today to explore how our analytics solutions can drive growth and success for your business.</strong>
             </p>
-            <button className="das-button">
+            <button onClick={()=>{navigate("/contact")}}  className="das-button">
                 Get started
             </button>
         </div>

@@ -63,6 +63,7 @@
     color: #ffffffd9;
     cursor: pointer;
     transition: color 0.3s ease;
+  
     
 }
 .nav_con1.home,.nav_con1.about,.nav_con1.web,.nav_con1.digital,.nav_con1.contact,.nav_con1.data{
@@ -75,7 +76,7 @@
     position: absolute;
     width: 0;
     height: 1px;
-    bottom: -3px;
+    bottom: -1px;
     left: 0;
     background-color: #f6f6f6;
     transition: width 0.3s ease;
@@ -174,7 +175,4 @@
         background-color: #ddd;
     }
     
-  
-  
-  
 }

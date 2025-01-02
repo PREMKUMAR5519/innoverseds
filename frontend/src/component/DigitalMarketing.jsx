@@ -8,9 +8,11 @@ import imag1 from '../images/imag1.png'
 import Footer from './Footer'
 import Navbar from './Navbar'
 import { useMyContext } from '../context/MyContext'
+import { useNavigate } from 'react-router-dom'
 
 function DigitalMarketing() {
   const { setIsScrolled, setSelected } = useMyContext()
+  const navigate = useNavigate()
   useEffect(() => {
     setSelected('digital')
     const handleScroll = () => {
@@ -64,7 +66,7 @@ function DigitalMarketing() {
       <section className='wd_top_section' style={{backgroundImage:`url("${digihome11}")`}}>
         <h1>Supercharge Your Business Growth with Expert Digital Marketing Solutions</h1>
         <p>Transform your digital presence with Innoverse Digital Solutions. Our tailored strategies in SEO, social media marketing, PPC, and more are designed to help your business thrive online. Whether you want to boost your search engine rankings, engage with your audience on social platforms, or drive targeted traffic through paid ads, we create impactful solutions that deliver measurable results. Let us help you turn clicks into loyal customers and drive consistent growth for your business.</p>
-        <button>contact us</button>
+        <button onClick={()=>{navigate("/contact")}}>contact us</button>
       </section>
       <section className='dm_section2'>
         <div className='dm_section21'>
@@ -198,7 +200,7 @@ function DigitalMarketing() {
       <p className="dms-cta-text-bold">
             Let’s grow your business together—starting today!
           </p>
-          <button className="dms-contact-button">Contact us!</button>
+          <button onClick={()=>navigate('/contact')} className="dms-contact-button">Contact us!</button>
        
       </div>
       <Footer />
