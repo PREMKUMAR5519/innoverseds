@@ -3,6 +3,7 @@ import '../style/Home.css'
 import ClientFeedback from './ClientFeedback'
 import digitalmarketing from '../images/digitalmarketing.png';
 import webdevelopment from '../images/webdevelopment.jpg';
+import background from '../images/webdevelopment.jpg';
 import home from '../images/Home.png';
 
 import ContactSection from './ContactSection ';
