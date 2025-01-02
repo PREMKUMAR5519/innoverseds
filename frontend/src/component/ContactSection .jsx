@@ -8,7 +8,7 @@ const ContactSection = () => {
     message: '',
   });
 
-  const googleFormActionURL = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSe32hI8jC-6AVcTp4_roePB-zxdD5QwBzpCh6fzQsOx-1Utwg/formResponse?embedded=true";
+  const googleFormActionURL = "https://docs.google.com/forms/u/0/d/1sgbcMAhwQV029TiAVwylWO5AX3sX5mf4qSTThUyFj6Y/formResponse?embedded=true";
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -22,9 +22,9 @@ const ContactSection = () => {
     e.preventDefault();
 
     const formPayload = new FormData();
-    formPayload.append("entry.1633920210", formData.name); // Replace with your Google Form's name field entry ID
-    formPayload.append("entry.227649005", formData.email); // Replace with your Google Form's email field entry ID
-    formPayload.append("entry.790080973", formData.message); // Replace with your Google Form's message field entry ID
+    formPayload.append("entry.2005620554", formData.name); // Replace with your Google Form's name field entry ID
+    formPayload.append("entry.1045781291", formData.email); // Replace with your Google Form's email field entry ID
+    formPayload.append("entry.1065046570", formData.message); // Replace with your Google Form's message field entry ID
 
     fetch(googleFormActionURL, {
       method: "POST",
