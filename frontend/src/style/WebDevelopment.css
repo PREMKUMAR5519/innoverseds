@@ -214,3 +214,50 @@
     width: 25vw;
     border-radius: 10px;
   }
+  .wb_services2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .wd_top_section > p {
+        width: 90%;
+    }
+    .wd_section2_1 {
+        flex-direction: column;
+        padding: 0 2rem;
+    }
+    .wd_section2_12 > img {
+        width: 100%;
+    }
+    .wd_section32{
+        display: flex;
+        flex-direction: column;
+    }
+    .wd_section32_1{
+        width: 80%;
+        padding-left: 5%;
+        
+    }
+    .wd_section32_1>div>h6{
+        font-size: 0.9rem;
+    }
+    .wd_section32_1>div>p{
+        font-size: 0.7rem;
+    }
+    .wd_section32_2{
+        width: 90%;
+    }
+    .wd_section32_2>img{
+        width: 80%;
+    }
+    .wd_section2_11{
+        width: 90%;
+        padding-bottom: 20px;
+    }
+    .wd_section2_11>p{
+        font-size: 0.7rem;
+    }
+    
+}
