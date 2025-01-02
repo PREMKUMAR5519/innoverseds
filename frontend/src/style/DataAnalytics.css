@@ -33,11 +33,11 @@
     align-items: center;
     padding: 50px;
     background-color: #fff;
-    padding: 0 10rem;
 }
 
 .da-content {
-    max-width: 70%;
+    width: 80%;
+    padding-left: 10%;
 
 }
 

@@ -6,6 +6,7 @@ import DigitalMarketing from './component/DigitalMarketing';
 import DataAnalytics from './component/DataAnalytics';
 import Contact from './component/Contact';
 import { MyContextProvider } from './context/MyContext';
+import About from './component/About';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
     <Route path='/' element={<Home/>}/>
     <Route path='/web-development' element={<WebDevelopment/>}/>
     <Route path='/digital-marketing' element={<DigitalMarketing/>}/>
+    <Route path='/about' element={<About/>}/>
     <Route path='/data-analytics' element={<DataAnalytics/>}/>
     <Route path='/contact' element={<Contact/>}/>
     </Routes>

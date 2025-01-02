@@ -71,3 +71,16 @@
     color: #777;
   }
   
+  @media only screen and (max-width: 480px) {
+  
+    
+    .feedback-card {
+     
+      width: 95%;
+    }
+    .feedback-text{
+      font-size: 0.8rem;
+
+    }
+  
+  }

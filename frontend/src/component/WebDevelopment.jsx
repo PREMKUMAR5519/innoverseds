@@ -2,6 +2,13 @@ import React, { useEffect } from 'react'
 import '../style/WebDevelopment.css'
 import webd from '../images/webd.jpg'
 import webdevep from '../images/webdevep.jpeg'
+import webhome from '../images/webhome.png'
+import ecomm1 from '../images/e-comm1.png'
+import custom1 from '../images/custom1.png'
+import port1 from '../images/port1.png'
+import corp1 from '../images/corp1.png'
+import learn1 from '../images/learn1.png'
+import basic1 from '../images/basic1.png'
 import Footer from './Footer'
 import Navbar from './Navbar'
 import { useMyContext } from '../context/MyContext'
@@ -30,32 +37,32 @@ function WebDevelopment() {
         {
             name:"E-Commerce Solutions",
             desc:"Empower your business with robust e-commerce websites designed to drive sales and deliver seamless shopping experiences. From secure payment gateways to user-friendly interfaces, our solutions ensure your customers keep coming back.",
-            image:'https://www.acces-referencement.fr/wp-content/uploads/2022/11/web5_r-445x265.jpeg'
+            image:ecomm1
         },
         {
             name:"Custom Website Solutions",
             desc:"Our experts create tailor-made websites that perfectly capture your brand identity while addressing your unique business needs. From concept to launch, we ensure your online presence stands out with functionality and style.",
-            image:'https://www.acces-referencement.fr/wp-content/uploads/2022/11/web5_r-445x265.jpeg'
+            image:custom1
         },
         {
             name:"Portfolio Websites",
             desc:"Showcase your work with stunning portfolio websites designed to captivate your audience. Whether you’re an artist, freelancer, or business, our tailored web solutions help you present your skills and projects with style and professionalism.",
-            image:'https://www.acces-referencement.fr/wp-content/uploads/2022/11/web5_r-445x265.jpeg'
+            image:port1
         },
         {
             name:"Corporate Websites",
             desc:"Elevate your corporate identity with professionally designed websites that reflect your brand values and build trust with your audience. Our solutions focus on seamless navigation, responsive design, and functionality to meet the demands of modern businesses.",
-            image:'https://www.acces-referencement.fr/wp-content/uploads/2022/11/web5_r-445x265.jpeg'
+            image:corp1
         },
         {
             name:"Educational Websites",
             desc:"Create an engaging online learning experience with custom educational websites designed to deliver content seamlessly. Whether it’s for schools, courses, or e-learning platforms, our solutions focus on intuitive navigation, interactive features, and scalable design to enhance the learning journey.",
-            image:'https://www.acces-referencement.fr/wp-content/uploads/2022/11/web5_r-445x265.jpeg'
+            image:learn1
         },
         {
             name:"Basic Websites",
             desc:"Get your business online with a simple yet effective website that represents your brand. Our basic websites offer clean design, easy navigation, and essential functionality, making them perfect for small businesses, personal portfolios, or anyone looking to establish a strong online presence without complexity.",
-            image:'https://www.acces-referencement.fr/wp-content/uploads/2022/11/web5_r-445x265.jpeg'
+            image:basic1
         },
         
     ]
@@ -93,7 +100,7 @@ function WebDevelopment() {
   return (
     <div>
         <Navbar/>
-        <section className='wd_top_section'>
+        <section className='wd_top_section' style={{backgroundImage:`url("${webhome}")`}}>
             <h1>Elegant Web Solutions for Your Business</h1>
             <p>Transform your digital presence with expertly crafted websites, including custom designs, e-commerce platforms, and portfolio showcases. Tailored to your needs, our web solutions help your brand stand out and thrive online.</p>
             <button>contact us</button>

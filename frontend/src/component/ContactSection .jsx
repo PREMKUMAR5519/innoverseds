@@ -17,7 +17,6 @@ const ContactSection = () => {
       [id]: value,
     }));
   };
-
   const handleSubmit = (e) => {
     e.preventDefault();
 

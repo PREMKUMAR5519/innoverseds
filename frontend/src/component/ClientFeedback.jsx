@@ -1,6 +1,7 @@
 import React from 'react';
 import '../style/ClientFeedback.css';
-
+import dp1 from '../images/dp1.jpg';
+import dp2 from '../images/dp2.jpg';
 const ClientFeedback = () => {
   return (
     <div className="feedback-section">
@@ -16,7 +17,7 @@ const ClientFeedback = () => {
           </p>
           <div className="client-info">
             <img
-              src="https://via.placeholder.com/40"
+              src={dp1}
               alt="Priya Nair"
               className="client-photo"
             />
@@ -33,7 +34,7 @@ const ClientFeedback = () => {
           </p>
           <div className="client-info">
             <img
-              src="https://via.placeholder.com/40"
+              src={dp2}
               alt="Suresh Kumar"
               className="client-photo"
             />

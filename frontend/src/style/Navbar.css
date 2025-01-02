@@ -21,7 +21,7 @@
     
    background-color: white;
    color: black;
-   .nav_con1.home,.nav_con1.web,.nav_con1.digital,.nav_con1.contac,.nav_con1.data{
+   .nav_con1.home,.nav_con1.web,.nav_con1.digital,.nav_con1.contac,.nav_con1.data,.nav_con1.about{
     
     color: rgb(0, 0, 0);
    }
@@ -34,7 +34,10 @@
   }
 
 }
-
+.nav_con0>img{
+    width: 150px;
+    
+}
 
 .nav_con{
     width: 100%;
@@ -62,7 +65,7 @@
     transition: color 0.3s ease;
     
 }
-.nav_con1.home,.nav_con1.web,.nav_con1.digital,.nav_con1.contact,.nav_con1.data{
+.nav_con1.home,.nav_con1.about,.nav_con1.web,.nav_con1.digital,.nav_con1.contact,.nav_con1.data{
     color: white;
     font-weight: 500;
 }
@@ -100,7 +103,7 @@
         color: white;
         font-weight: 200;
         text-transform: uppercase;
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         letter-spacing: 0.8px;
         transition: all 0.3s ease-in-out;
     
@@ -113,4 +116,65 @@
 }
 .nav_con1>img{
     height: 40px;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+  
+    .nav_con0>img{
+        width: 60px;
+    }
+    .mobile_nav_main {
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+    }
+    
+    .mobile_nav_top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    
+    .mobile_nav_logo img {
+        height: 40px;
+    }
+    
+    .menu_button {
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .mobile_nav_menu {
+        display: flex;
+        flex-direction: column;
+        background-color: #f9f9f9;
+        padding: 10px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .mobile_nav_item {
+        padding: 10px 20px;
+        text-align: left;
+        font-size: 16px;
+        color: #333;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+    
+    .mobile_nav_item:hover {
+        background-color: #ddd;
+    }
+    
+  
+  
+  
 }

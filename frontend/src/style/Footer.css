@@ -5,7 +5,6 @@
     background-color: #3c60db;
     color: #ffffff;
     padding: 40px 40px;
-  
     justify-content: space-between;
   }
   
@@ -80,4 +79,30 @@
     font-weight: 500;
     letter-spacing: 1px;
 
+  }
+
+  @media only screen and (max-width: 480px) {
+  
+    .footer {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      background-color: #3c60db;
+      color: #ffffff;
+      padding: 40px 40px;
+      justify-content: space-between;
+      position: relative;
+    }
+    .footer-section>p{
+      font-size: 0.8rem;
+      font-weight: 300;
+    }
+    .footer-bottom{
+      position: absolute;
+      bottom: 20px;
+      z-index: 2;
+      left: 20px;
+
+    }
+  
   }

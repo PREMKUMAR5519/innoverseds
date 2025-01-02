@@ -3,14 +3,17 @@ import '../style/Home.css'
 import ClientFeedback from './ClientFeedback'
 import digitalmarketing from '../images/digitalmarketing.png';
 import webdevelopment from '../images/webdevelopment.jpg';
+import home from '../images/Home.png';
+
 import ContactSection from './ContactSection ';
 import Footer from './Footer';
 import Navbar from './Navbar';
 import { useMyContext } from '../context/MyContext'
-
+import { useNavigate } from 'react-router-dom';
 function Home() { 
 
    const { setIsScrolled, setSelected } = useMyContext()
+   const navigate=useNavigate()
     useEffect(() => {
       setSelected('home')
         const handleScroll = () => {
@@ -48,13 +51,13 @@ function Home() {
   return (
     <div className='home_main'>
       <Navbar/>
-        <section className='top_section'>
+        <section className='top_section' style={{backgroundImage:`url("${home}")`}}>
             <div className='hts_1'>
                 <h1>Innovating Your Future, One Step at a Time</h1>
                 <p>Discover how Innoverse Digital Services can elevate your business with cutting-edge web development, <br/> powerful digital marketing strategies, and actionable data insights.</p>
                <div className='hts_11'>
                <h2>From dreams to delivery, we’re your trusted partner in success. <br/> Let’s Build Something Extraordinary Together</h2>
-               <button>Get Started</button>
+               <button onClick={()=>{navigate("/contact")}}>Get Started</button>
                </div>
 
             </div>

@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react'
 import '../style/DataAnalytics.css'
 import images from '../images/images.jpg'
+import datahome1 from '../images/datahome1.png'
+import data11 from '../images/data11.png'
+import data21 from '../images/data21.png'
 import Footer from './Footer'
 import Navbar from './Navbar'
 import { useMyContext } from '../context/MyContext'
@@ -31,7 +34,7 @@ function DataAnalytics() {
   return (
     <div>
         <Navbar/>
-        <section className='wd_top_section'>
+        <section className='wd_top_section' style={{backgroundImage:`url("${datahome1}")`}}>
             <h1>Unlock the Power of Data Analytics for Your Business</h1>
             <p>Leverage advanced data analytics solutions to transform your business insights into actionable strategies. At Innoverse Digital Solutions, we empower you with customized analytics tools to make smarter decisions, drive growth, and achieve lasting success. Turn data into your competitive advantage today.</p>
             <span>Get Started with Data-Driven Success</span>
@@ -67,7 +70,7 @@ function DataAnalytics() {
       </div>
       <div className="ds-image-container">
         <img
-          src={images}
+          src={data11}
           alt="Digital Marketing"
           className="ds-image"
         />
@@ -91,7 +94,7 @@ function DataAnalytics() {
       </div>
       <div className="ds-image-container">
         <img
-          src={images}
+          src={data21}
           alt="Digital Marketing"
           className="ds-image"
         />
@@ -139,7 +142,6 @@ function DataAnalytics() {
                 </ol>
             </div>
             <div className="da-image-container">
-                <img src={images} alt="Data Analytics" className="da-image"/>
             </div>
         </div>
 

@@ -33,3 +33,30 @@ h1,h2,h3,h4,h5,h6{
   font-style: normal;
 
 }
+
+@media only screen and (max-width: 480px) {
+
+
+  .home_heading{
+    font-size: calc(1.1rem + 2vw);
+    text-align: center;
+    letter-spacing: 1.3px;
+    word-spacing: 1px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: rgb(48, 48, 48);
+  }
+  .home_subheading{
+    font-size: calc(0.55rem + 0.5vw);
+    width: 80%;
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 0.5rem;
+    letter-spacing: 0.8px;
+    word-spacing: 1px;
+    text-transform: capitalize;
+    font-weight: 400;
+  
+  }
+
+}

@@ -9,6 +9,8 @@
     align-items: center;
     gap: 2rem;
     position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .wd_top_section>p{
     width: 60%;
