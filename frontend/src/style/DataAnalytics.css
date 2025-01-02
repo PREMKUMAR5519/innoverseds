@@ -112,3 +112,22 @@
 .das-button:hover {
     background-color: #333;
 }
+@media only screen and (max-width: 480px) {
+
+
+    .ds-heading{
+        font-size: 1rem;
+      }
+    .ds-description{
+        font-size: 0.8rem;
+    }
+    .da-content{
+        width: 90%;
+        padding-left: 5%;
+    }
+    .da-list{
+        font-size: 0.9rem;
+    }
+}
+
+

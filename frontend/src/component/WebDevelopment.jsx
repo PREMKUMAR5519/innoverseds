@@ -108,7 +108,6 @@ function WebDevelopment() {
         <section className='wd_section2'>
             <h1>Web Development: Building Your Online Presence</h1>
             <p>Your website is more than just a digital brochure – it’s your business’s online identity. At Innoverse Digital Solutions, we specialize in creating custom, responsive websites designed to attract visitors and drive conversions. From e-commerce platforms to portfolios, we ensure your website is fast, user-friendly, and SEO-optimized for maximum impact.</p>
-
             <div className='wd_section2_1'>
                 <div className='wd_section2_11'>
                     <h5>Why Your Business Needs a Website in Today’s Digital World</h5>

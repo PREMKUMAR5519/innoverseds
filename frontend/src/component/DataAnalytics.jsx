@@ -116,7 +116,8 @@ function DataAnalytics() {
                 </h2>
                 <ol className="da-list">
                     <li>
-                        <strong>Tailored Analytics Solutions</strong><br />
+                        <strong>Tailored Analytics Solutions</strong>
+                        <br />
                         We understand that every business is unique. Our data analytics services are customized to meet your specific needs, ensuring you receive insights that are relevant and impactful for your business goals.
                     </li>
                     <li>

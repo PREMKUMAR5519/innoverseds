@@ -257,7 +257,23 @@
         padding-bottom: 20px;
     }
     .wd_section2_11>p{
-        font-size: 0.7rem;
+        font-size: 0.8rem;
+
+    }
+    .wd_section2>h1{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .wd_section2>p{
+        font-size: 0.8rem;
+        text-align: center;
+        width: 95%;
+    }
+    .wd_end>p{
+        width: 80%;
+        font-size: 0.9rem
+    
+
     }
     
 }
