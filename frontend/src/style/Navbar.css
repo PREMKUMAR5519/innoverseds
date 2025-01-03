@@ -126,7 +126,7 @@
    
     .mobile_nav_main {
         width: 100%;
-        background-color: #cd27271e;
+        background-color: #62626200;
         position: fixed;
         backdrop-filter: blur(10px);
         top: 0;
@@ -162,13 +162,15 @@
     .mobile_nav_menu {
         display: flex;
         flex-direction: column;
-        background-color: #f9f9f900;
+        background-color: #00000035;
         padding: 10px 0;
         gap: 1rem;
         text-decoration: none;
         justify-content: center;
         align-items: center;
         min-height: 100vh;
+        font-family: "Roboto", serif;
+        font-style: normal;
 
     }
        
