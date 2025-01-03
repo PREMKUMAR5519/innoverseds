@@ -35,7 +35,7 @@
 
 }
 .nav_con0>img{
-    width: 150px;
+    width: 130px;
     
 }
 
@@ -123,27 +123,31 @@
 
 @media only screen and (max-width: 480px) {
   
-    .nav_con0>img{
-        width: 60px;
-    }
+   
     .mobile_nav_main {
         width: 100%;
-        background-color: #fff;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: #cd27271e;
         position: fixed;
+        backdrop-filter: blur(10px);
         top: 0;
         z-index: 1000;
+        text-decoration: none;
+        
     }
+
     
     .mobile_nav_top {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 10px 20px;
+        text-decoration: none;
+        background-color: white;
+
     }
     
     .mobile_nav_logo img {
-        height: 40px;
+        height: 30px;
     }
     
     .menu_button {
@@ -151,21 +155,29 @@
         background: none;
         border: none;
         cursor: pointer;
+        text-decoration: none;
+
     }
     
     .mobile_nav_menu {
         display: flex;
         flex-direction: column;
-        background-color: #f9f9f9;
+        background-color: #f9f9f900;
         padding: 10px 0;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        gap: 1rem;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+
     }
        
     .mobile_nav_item {
         padding: 10px 20px;
         text-align: left;
-        font-size: 16px;
-        color: #333;
+        font-size: 20px;
+        letter-spacing: 1px;
+        color: #ffffff;
         text-decoration: none;
         cursor: pointer;
         transition: background-color 0.2s;

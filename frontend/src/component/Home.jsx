@@ -5,12 +5,13 @@ import digitalmarketing from '../images/digitalmarketing.png';
 import webdevelopment from '../images/webdevelopment.jpg';
 import background from '../images/webdevelopment.jpg';
 import home from '../images/Home.png';
-
 import ContactSection from './ContactSection ';
 import Footer from './Footer';
 import Navbar from './Navbar';
 import { useMyContext } from '../context/MyContext'
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
+
 function Home() { 
 
    const { setIsScrolled, setSelected } = useMyContext()
@@ -51,6 +52,17 @@ function Home() {
     ]
   return (
     <div className='home_main'>
+       <Helmet>
+        <title>Home - Innoverse Digital Services</title>
+        <meta name="description" content="Discover how Innoverse Digital Services can elevate your business with cutting-edge web development, powerful digital marketing strategies, and actionable data insights." />
+        <meta name="keywords" content="web development, digital marketing, data analytics, Tamil Nadu, Innoverse Digital Services" />
+        <meta name="author" content="Innoverse Digital Solutions" />
+        <meta property="og:title" content="Home - Innoverse Digital Services" />
+        <meta property="og:description" content="Innovating Your Future, One Step at a Time. Discover how Innoverse Digital Services can elevate your business." />
+        <meta property="og:image" content={home} />
+        <meta property="og:url" content="https://yourdomain.com/home" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
       <Navbar/>
         <section className='top_section' style={{backgroundImage:`url("${home}")`}}>
             <div className='hts_1'>

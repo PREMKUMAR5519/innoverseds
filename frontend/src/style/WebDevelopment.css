@@ -274,6 +274,10 @@
         font-size: 0.9rem
     
 
+    }  .wb_services2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80%, 1fr));
+        gap: 2rem;
     }
     
 }

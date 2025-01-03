@@ -122,11 +122,16 @@
         font-size: 0.8rem;
     }
     .da-content{
-        width: 90%;
+        width: 95%;
         padding-left: 5%;
     }
     .da-list{
         font-size: 0.9rem;
+        
+    }
+    .da-container{
+        padding: 0;
+        padding-left: 0;
     }
 }
 

@@ -42,25 +42,24 @@ function Navbar() {
             </button>
         </div>
 
-        {/* Dropdown Menu */}
         {menuOpen && (
             <div className='mobile_nav_menu'>
-                <Link to="/" onClick={() => setMenuOpen(false)}>
+                <Link style={{textDecoration:"none"}} to="/" onClick={() => setMenuOpen(false)}>
                     <div className='mobile_nav_item'>Home</div>
                 </Link>
-                <Link to="/about" onClick={() => setMenuOpen(false)}>
+                <Link  style={{textDecoration:"none"}} to="/about" onClick={() => setMenuOpen(false)}>
                     <div className='mobile_nav_item'>About</div>
                 </Link>
-                <Link to="/web-development" onClick={() => setMenuOpen(false)}>
+                <Link  style={{textDecoration:"none"}} to="/web-development" onClick={() => setMenuOpen(false)}>
                     <div className='mobile_nav_item'>Web Development</div>
                 </Link>
-                <Link to="/digital-marketing" onClick={() => setMenuOpen(false)}>
+                <Link  style={{textDecoration:"none"}} to="/digital-marketing" onClick={() => setMenuOpen(false)}>
                     <div className='mobile_nav_item'>Digital Marketing</div>
                 </Link>
-                <Link to="/data-analytics" onClick={() => setMenuOpen(false)}>
+                <Link  style={{textDecoration:"none"}} to="/data-analytics" onClick={() => setMenuOpen(false)}>
                     <div className='mobile_nav_item'>Data Analytics</div>
                 </Link>
-                <Link to="/contact" onClick={() => setMenuOpen(false)}>
+                <Link  style={{textDecoration:"none"}} to="/contact" onClick={() => setMenuOpen(false)}>
                     <div className='mobile_nav_item'>Contact</div>
                 </Link>
             </div>
